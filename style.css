@@ -1,0 +1,747 @@
+                                                        *html {
+                                                            font-family: sans-serif;
+                                                        }
+                                                        
+                                                        .header-1 {
+                                                            background: #eee;
+                                                            display: flex;
+                                                            font-size: 2rem;
+                                                            padding: 2rem 9%;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                        }
+                                                        
+                                                        .header {
+                                                            transition: all 0.3s;
+                                                        }
+                                                        
+                                                        #search-box {
+                                                            margin: 10px 10px;
+                                                            border-radius: 2px;
+                                                            border: 2px solid #ff523b;
+                                                        }
+                                                        
+                                                        .logo-text {
+                                                            color: #010001;
+                                                            font-weight: bolder;
+                                                            font-size: 2.2rem;
+                                                        }
+                                                        
+                                                        .logo-text i {
+                                                            padding-right: 0.5rem;
+                                                            color: green;
+                                                        }
+                                                        
+                                                        .header-2 {
+                                                            background: #fff;
+                                                            display: flex;
+                                                            font-size: 1rem;
+                                                            padding: 2rem 9%;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .header-2.active {
+                                                            position: fixed;
+                                                            top: 0;
+                                                            right: 0;
+                                                            left: 0;
+                                                            z-index: 1000;
+                                                        }
+                                                        
+                                                        .header-2 .navbar a {
+                                                            padding: .5rem 1.5rem;
+                                                            font-size: 1rem;
+                                                            border-radius: .5rem;
+                                                            color: #010001;
+                                                        }
+                                                        
+                                                        .header-2 .navbar a:hover {
+                                                            background: green;
+                                                            color: #fff;
+                                                        }
+                                                        
+                                                        #menu-b {
+                                                            font-size: 3rem;
+                                                            border-radius: .5rem;
+                                                            border: .1rem solid black;
+                                                            cursor: pointer;
+                                                            display: none;
+                                                        }
+                                                        
+                                                        #menu-c {
+                                                            font-size: 3rem;
+                                                            border-radius: .5rem;
+                                                            border: .1rem solid black;
+                                                            cursor: pointer;
+                                                            display: none;
+                                                        }
+                                                        
+                                                        a {
+                                                            text-decoration: none;
+                                                        }
+                                                        
+                                                        p {
+                                                            color: #555;
+                                                        }
+                                                        
+                                                        .container {
+                                                            max-width: 1300px;
+                                                            margin: auto;
+                                                        }
+                                                        
+                                                        .row {
+                                                            display: flex;
+                                                            align-items: center;
+                                                            flex-wrap: wrap;
+                                                            justify-content: space-around;
+                                                        }
+                                                        
+                                                        .col_2 {
+                                                            flex-basis: 50%;
+                                                            min-height: 300px;
+                                                        }
+                                                        
+                                                        .col_2 img {
+                                                            max-width: 100%;
+                                                            padding: 50px 0;
+                                                        }
+                                                        
+                                                        .gh {
+                                                            background: radial-gradient(#ff523b, #ffd6d6);
+                                                        }
+                                                        
+                                                        .col_2 h1 {
+                                                            font-size: 40px;
+                                                            padding-bottom: 30px;
+                                                        }
+                                                        
+                                                        .col_2 p {
+                                                            font-size: 15px;
+                                                        }
+                                                        
+                                                        .gh .row {
+                                                            margin-top: 70px;
+                                                        }
+                                                        
+                                                        button {
+                                                            padding: 10px 20px;
+                                                            border-color: #ff523b;
+                                                            border-radius: 30px;
+                                                            float: left;
+                                                            background-color: #ff523b;
+                                                            color: #0000;
+                                                        }
+                                                        
+                                                        .categoris {
+                                                            margin: 70px 0;
+                                                        }
+                                                        
+                                                        .titl {
+                                                            text-align: center;
+                                                            margin: 0 auto 80px;
+                                                            position: relative;
+                                                            line-height: 60px;
+                                                            color: #555;
+                                                            font-weight: bold;
+                                                        }
+                                                        
+                                                        .titl::after {
+                                                            content: '';
+                                                            background: #ff523b;
+                                                            width: 80px;
+                                                            height: 8px;
+                                                            border-radius: 5px;
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                        }
+                                                        
+                                                        .col-3 {
+                                                            flex-basis: 30%;
+                                                            min-width: 250px;
+                                                            margin-bottom: 30px;
+                                                        }
+                                                        
+                                                        .col-3 img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .small-cont {
+                                                            max-width: 1080px;
+                                                            margin: auto;
+                                                            padding-left: 25px;
+                                                            padding-right: 25px;
+                                                        }
+                                                        
+                                                        .col-4 {
+                                                            flex-basis: 25%;
+                                                            padding: 10px;
+                                                            max-width: 200px;
+                                                            margin-bottom: 50px;
+                                                            transition: transfrom 0.5s;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .col-4 img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .title {
+                                                            text-align: center;
+                                                            margin: 0 auto 80px;
+                                                            position: relative;
+                                                            line-height: 60px;
+                                                            color: #555;
+                                                        }
+                                                        
+                                                        .title::after {
+                                                            content: '';
+                                                            background: #ff523b;
+                                                            width: 80px;
+                                                            height: 8px;
+                                                            border-radius: 5px;
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                        }
+                                                        
+                                                        h3 {
+                                                            font-weight: normal;
+                                                        }
+                                                        
+                                                        .col-4 p {
+                                                            font-size: 14px;
+                                                        }
+                                                        
+                                                        .rating {
+                                                            color: #ff523b;
+                                                        }
+                                                        
+                                                        .col-4:hover {
+                                                            transform: translateY(-5px);
+                                                        }
+                                                        
+                                                        .col-5 {
+                                                            flex-basis: 50%;
+                                                            padding: 10px;
+                                                            max-width: 200px;
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .col-5 img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .col-5 h3 {
+                                                            font-weight: bold;
+                                                        }
+                                                        
+                                                        .col-5 p {
+                                                            font-size: 18px;
+                                                        }
+                                                        
+                                                        .till {
+                                                            text-align: center;
+                                                            margin: 0 auto 80px;
+                                                            position: relative;
+                                                            line-height: 60px;
+                                                            color: #555;
+                                                            margin-top: 60px;
+                                                            margin-bottom: 0;
+                                                        }
+                                                        
+                                                        .till::after {
+                                                            content: '';
+                                                            background: #ff523b;
+                                                            width: 60px;
+                                                            height: 8px;
+                                                            border-radius: 5px;
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                        }
+                                                        
+                                                        .offer {
+                                                            margin-top: 80px;
+                                                            padding: 30px 0;
+                                                            background: radial-gradient(#fff, #ffd6d6);
+                                                        }
+                                                        
+                                                        .more {
+                                                            text-align: center;
+                                                            margin: 0 auto 80px;
+                                                            position: relative;
+                                                            line-height: 60px;
+                                                            color: #555;
+                                                            padding-top: 20px;
+                                                        }
+                                                        
+                                                        .more::after {
+                                                            content: '';
+                                                            background: #ff523b;
+                                                            width: 80px;
+                                                            height: 8px;
+                                                            border-radius: 5px;
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                        }
+                                                        
+                                                        .brands {
+                                                            margin: 100px auto;
+                                                        }
+                                                        
+                                                        .col-11 {
+                                                            width: 160px;
+                                                        }
+                                                        
+                                                        .col-11 img {
+                                                            width: 100%;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .col-6 p {
+                                                            font-size: 10px;
+                                                            font-weight: bold;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .fea {
+                                                            text-align: center;
+                                                            margin: 0 auto 80px;
+                                                            position: relative;
+                                                            line-height: 60px;
+                                                            color: #555;
+                                                            padding-top: 20px;
+                                                        }
+                                                        
+                                                        .fea::after {
+                                                            content: '';
+                                                            background: #ff523b;
+                                                            width: 80px;
+                                                            height: 8px;
+                                                            border-radius: 5px;
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                        }
+                                                        
+                                                        .footer .container {
+                                                            display: flex;
+                                                            gap: 1.5rem;
+                                                            flex-wrap: wrap;
+                                                        }
+                                                        
+                                                        .footer .container .box .share a {
+                                                            padding: .5rem 1.5rem;
+                                                            font-size: 1rem;
+                                                            border-radius: .5rem;
+                                                            color: #010001;
+                                                        }
+                                                        
+                                                        .footer .container .box .share a:hover {
+                                                            background: green;
+                                                            color: #fff;
+                                                        }
+                                                        
+                                                        .footer .container .box {
+                                                            padding: 1rem 0;
+                                                            flex: 1 1 25rem;
+                                                        }
+                                                        
+                                                        .box-1 {
+                                                            text-align: right;
+                                                        }
+                                                        
+                                                        .footer.container.box.links {
+                                                            padding: 1rem 0;
+                                                        }
+                                                        
+                                                        .links h1 {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .links a {
+                                                            display: block;
+                                                            padding: .5rem 0;
+                                                            font-size: 1.2rem;
+                                                            text-align: center;
+                                                            border-radius: .5rem;
+                                                            color: #000;
+                                                        }
+                                                        
+                                                        .links a:hover {
+                                                            background: green;
+                                                            color: #fff;
+                                                        }
+                                                        
+                                                        .headd {
+                                                            text-align: center;
+                                                            color: #000;
+                                                        }
+                                                        /*----------------------------product--------------------------------*/
+                                                        
+                                                        .col-6 {
+                                                            flex-basis: 25%;
+                                                            padding: 10px;
+                                                            max-width: 200px;
+                                                            margin-bottom: 50px;
+                                                            transition: transfrom 0.5s;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .col-6 img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .col-6 p {
+                                                            font-size: 15px;
+                                                            text-align: left;
+                                                        }
+                                                        
+                                                        .offer {
+                                                            margin-top: 80px;
+                                                            padding: 30px 0;
+                                                            background: radial-gradient(#fff, #ffd6d6);
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .col-8 {
+                                                            flex-basis: 15%;
+                                                            padding: 8px;
+                                                            max-width: 200px;
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .col-8 img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .col-9 {
+                                                            flex-basis: 15%;
+                                                            padding: 10px;
+                                                            max-width: 200px;
+                                                            margin-bottom: 50px;
+                                                            transition: transfrom 0.5s;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .col-9 img {
+                                                            width: 80%;
+                                                        }
+                                                        
+                                                        button {
+                                                            padding: 10px 20px;
+                                                            border-color: #ff523b;
+                                                            border-radius: 30px;
+                                                            background-color: #ff523b;
+                                                            color: #fff;
+                                                            transition: all 0.3s;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        select {
+                                                            border: 5px solid #ff523b;
+                                                            padding: 5px 8px;
+                                                            border-radius: 10px;
+                                                            display: none;
+                                                        }
+                                                        /*------cart-------*/
+                                                        
+                                                        .fa-shopping-bag {
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .cart {
+                                                            position: fixed;
+                                                            right: 0;
+                                                            width: 360px;
+                                                            min-height: 100vh;
+                                                            padding: 10px 0;
+                                                            background: radial-gradient(#fff, #ffd6d6);
+                                                            top: 0;
+                                                            transition: 0.3s;
+                                                            z-index: 3;
+                                                            display: none;
+                                                        }
+                                                        
+                                                        .cart.active {
+                                                            display: inline;
+                                                        }
+                                                        
+                                                        .cart-title {
+                                                            text-align: center;
+                                                            font-size: 15px;
+                                                            font-weight: 600;
+                                                            margin-top: 50px;
+                                                        }
+                                                        
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .logo-1 {
+                                                            width: 20%;
+                                                            height: 20%;
+                                                        }
+                                                        
+                                                        .cart-box {
+                                                            display: grid;
+                                                            grid-template-columns: 32% 50% 18%;
+                                                            align-items: center;
+                                                            gap: 10px;
+                                                            margin-top: 10px;
+                                                        }
+                                                        
+                                                        .cart-img {
+                                                            height: 100px;
+                                                            width: 100px;
+                                                            object-fit: contain;
+                                                            padding: 10px;
+                                                        }
+                                                        
+                                                        .detail-box {
+                                                            display: grid;
+                                                            row-gap: 5px;
+                                                        }
+                                                        
+                                                        .crat-product-title {
+                                                            font-size: 10px;
+                                                            text-transform: uppercase;
+                                                        }
+                                                        
+                                                        .cart-price {
+                                                            font-weight: 500;
+                                                        }
+                                                        
+                                                        .cart-quantity {
+                                                            border: 1px solid #ff523b;
+                                                            border: #ff523b;
+                                                            width: 24px;
+                                                            text-align: center;
+                                                            font-size: 10px;
+                                                        }
+                                                        
+                                                        .cart-remove {
+                                                            font-size: 24px;
+                                                            color: #ff523b;
+                                                            cursor: pointer;
+                                                        }
+                                                        
+                                                        .total {
+                                                            display: flex;
+                                                            justify-content: flex-end;
+                                                            margin-top: 15px;
+                                                            border-top: 1px solid #010001;
+                                                        }
+                                                        
+                                                        .total-title {
+                                                            font-size: 10px;
+                                                            font-weight: 600;
+                                                        }
+                                                        
+                                                        .total-price {
+                                                            margin-left: 5px;
+                                                        }
+                                                        
+                                                        .btn-buy {
+                                                            display: flex;
+                                                            margin: 15px auto 0 auto;
+                                                            padding: 12px 20px;
+                                                            align-items: center;
+                                                        }
+                                                        
+                                                        #close-cart {
+                                                            position: absolute;
+                                                            top: 1rem;
+                                                            right: 8px;
+                                                            font-size: 20px;
+                                                            cursor: pointer;
+                                                        }
+                                                        /*media queris*/
+                                                        
+                                                        @media(max-width:990px) {
+                                                            .header-1,
+                                                            .header-2 {
+                                                                padding: 2rem;
+                                                            }
+                                                            .col-5 {
+                                                                flex-basis: 30%;
+                                                                padding: 5px;
+                                                                max-width: 80px;
+                                                                margin-bottom: 50px;
+                                                            }
+                                                            .col-5 img {
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                        
+                                                        @media(max-width:700px) {
+                                                            #menu-b {
+                                                                display: none;
+                                                            }
+                                                            .header-2 {
+                                                                background: #fff;
+                                                                display: flex;
+                                                                font-size: 1rem;
+                                                                padding: 2rem 6%;
+                                                                align-items: center;
+                                                                justify-content: space-between;
+                                                                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+                                                                position: relative;
+                                                            }
+                                                            .header-2 .navbar a {
+                                                                padding: .5rem 1rem;
+                                                                font-size: 1rem;
+                                                                border-radius: .5rem;
+                                                                color: #010001;
+                                                            }
+                                                            .categoris {
+                                                                margin: auto 0;
+                                                                padding-bottom: 110px;
+                                                            }
+                                                            .footer .container {
+                                                                display: flex;
+                                                                gap: .7rem;
+                                                                flex-wrap: wrap;
+                                                            }
+                                                            .footer .container .box .share a {
+                                                                padding: .5rem .7rem;
+                                                                font-size: .7rem;
+                                                                border-radius: .5rem;
+                                                                color: #010001;
+                                                            }
+                                                            .footer .container .box .share a:hover {
+                                                                background: green;
+                                                                color: #fff;
+                                                            }
+                                                            .footer .container .box {
+                                                                padding: .5rem 0;
+                                                                flex: .5rem .5rem 12.5rem;
+                                                            }
+                                                            .box-1 {
+                                                                text-align: right;
+                                                            }
+                                                            .footer.container.box.links {
+                                                                padding: .5rem 0;
+                                                            }
+                                                            .links h1 {
+                                                                text-align: left;
+                                                            }
+                                                            .links a {
+                                                                display: block;
+                                                                padding: .5rem 0;
+                                                                font-size: .6rem;
+                                                                text-align: center;
+                                                                border-radius: .5rem;
+                                                                color: #000;
+                                                            }
+                                                            .links a:hover {
+                                                                background: green;
+                                                                color: #fff;
+                                                            }
+                                                            .headd {
+                                                                text-align: left;
+                                                                color: #000;
+                                                            }
+                                                            .col-6 {
+                                                                flex-basis: 25%;
+                                                                padding: 10px;
+                                                                max-width: 200px;
+                                                                margin-bottom: 50px;
+                                                                transition: transfrom 0.5s;
+                                                                cursor: pointer;
+                                                            }
+                                                            .col-6 img {
+                                                                width: 80%;
+                                                            }
+                                                            .offer {
+                                                                margin-top: 80px;
+                                                                padding: 15px 0;
+                                                                background: radial-gradient(#fff, #ffd6d6);
+                                                                margin-bottom: 50px;
+                                                            }
+                                                            button {
+                                                                padding: 7px 10px;
+                                                                border-color: #ff523b;
+                                                                border-radius: 30px;
+                                                                background-color: #ff523b;
+                                                                color: #fff;
+                                                                transition: all 0.3s;
+                                                                cursor: pointer;
+                                                            }
+                                                            .brands {
+                                                                margin: 80px auto;
+                                                            }
+                                                            .col-11 {
+                                                                width: 100px;
+                                                            }
+                                                            .col-11 img {
+                                                                width: 80%;
+                                                                cursor: pointer;
+                                                            }
+                                                            .offer {
+                                                                margin-top: 80px;
+                                                                padding: 15px 0;
+                                                                background: radial-gradient(#fff, #ffd6d6);
+                                                            }
+                                                            .col-8 {
+                                                                flex-basis: 10%;
+                                                                padding: 4px;
+                                                                max-width: 80px;
+                                                                margin-bottom: 50px;
+                                                            }
+                                                            .col-8 img {
+                                                                width: 80%;
+                                                            }
+                                                            .col-5 {
+                                                                flex-basis: 30%;
+                                                                padding: 5px;
+                                                                max-width: 80px;
+                                                                margin-bottom: 50px;
+                                                            }
+                                                            .col-5 img {
+                                                                width: 100%;
+                                                            }
+                                                            .col-2 h3 {
+                                                                font-weight: bold;
+                                                                font-size: 10px;
+                                                            }
+                                                            .col-5 p {
+                                                                font-size: 10px;
+                                                            }
+                                                            .col_2 h1 {
+                                                                font-size: 20px;
+                                                                padding-bottom: 30px;
+                                                            }
+                                                            .col_2 p {
+                                                                font-size: 10px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media(max-width:450px) {
+                                                            .header-2 {
+                                                                background: #fff;
+                                                                display: flex;
+                                                                font-size: .6rem;
+                                                                padding: 2rem 4%;
+                                                                align-items: center;
+                                                                justify-content: space-between;
+                                                                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+                                                                position: relative;
+                                                            }
+                                                            .header-2 .navbar a {
+                                                                padding: .5rem .4rem;
+                                                                font-size: .8rem;
+                                                                border-radius: .5rem;
+                                                                color: #010001;
+                                                            }
+                                                        }
